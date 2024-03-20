@@ -4,16 +4,16 @@ import Mirador from 'mirador';
 // Import annotation plugin from node_modules
 import annotationPlugins from 'mirador-annotations';
 
-// Import LocalStorageAdapter from local file
-import LocalStorageAdapter from 'mirador-annotations/lib/LocalStorageAdapter';
+// Import the SimpleAnnotationServerV2Adapter
+import SimpleAnnotationServerV2Adapter from './SimpleAnnotationServerV2Adapter';
 
 const MiradorComponent = () => {
   useEffect(() => {
     // Configuration for Mirador viewer
     const config = {
       annotation: {
-        // Set adapter for annotations to LocalStorageAdapter
-        adapter: (canvasId) => new LocalStorageAdapter(`localStorage://?canvasId=${canvasId}`),
+        // Set adapter for annotations to the SAS adapter
+        adapter: (canvasId) => new SimpleAnnotationServerV2Adapter(canvasId, 'http://localhost:8888'),
         // Set to true to display annotation JSON export button
         exportLocalStorageAnnotations: true,
       },
