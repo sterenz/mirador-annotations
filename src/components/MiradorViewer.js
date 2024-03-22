@@ -13,7 +13,7 @@ const MiradorComponent = () => {
     const config = {
       annotation: {
         // Set adapter for annotations to the SAS adapter
-        adapter: (canvasId) => new SimpleAnnotationServerV2Adapter(canvasId, 'http://localhost:8888'),
+        adapter: (canvasId) => new SimpleAnnotationServerV2Adapter(canvasId, 'http://localhost:8888/annotation'),
         // Set to true to display annotation JSON export button
         exportLocalStorageAnnotations: true,
       },
@@ -29,7 +29,7 @@ const MiradorComponent = () => {
           // Enable image tools
           imageToolsEnabled: true,
           // Manifest ID of the IIIF manifest to load
-          manifestId: 'https://iiif.harvardartmuseums.org/manifests/object/299843',
+          manifestId: 'https://media.nga.gov/public/manifests/nga_highlights.json',
         },
       ],
     };

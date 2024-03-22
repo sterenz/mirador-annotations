@@ -4,7 +4,7 @@ import SimpleAnnotationServerV2Adapter from './SimpleAnnotationServerV2Adapter';
 const AnnotationManager = () => {
   // Initialize the adapter with canvasId and endpointUrl
   const canvasId = '47174896'; // Replace with your canvas ID
-  const endpointUrl = 'http://localhost:8888'; // Replace with your SAS endpoint URL
+  const endpointUrl = 'http://localhost:8888/annotation'; // Replace with your SAS endpoint URL
   const adapter = new SimpleAnnotationServerV2Adapter(canvasId, endpointUrl);
 
   // State to store annotations for the current canvas

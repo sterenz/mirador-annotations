@@ -13,7 +13,7 @@ export default class SimpleAnnotationServerV2Adapter {
 
   /** */
   async create(annotation) {
-    return fetch(`${this.endpointUrl}/create`, {
+    return fetch(`${this.endpointUrl}/create?APIKey=undefined`, {
       body: JSON.stringify(SimpleAnnotationServerV2Adapter.createV2Anno(annotation)),
       headers: {
         Accept: 'application/json',
@@ -74,12 +74,13 @@ export default class SimpleAnnotationServerV2Adapter {
     const v2anno = {
       '@context': 'http://iiif.io/api/presentation/2/context.json',
       '@type': 'oa:Annotation',
-      motivation: 'oa:commenting',
-      on: {
-        '@type': 'oa:SpecificResource',
-        full: v3anno.target.source.id,
-      },
+      motivation: 'oa:commenting'
     };
+  const on = {
+        '@type': 'oa:SpecificResource',
+        full: v3anno.target.source,
+      }
+    console.log(v3anno)
     // copy id if it is SAS-generated
     if (v3anno.id && v3anno.id.startsWith('http')) {
       v2anno['@id'] = v3anno.id;
@@ -93,21 +94,22 @@ export default class SimpleAnnotationServerV2Adapter {
       if (Array.isArray(v3anno.target.selector)) {
         const selectors = v3anno.target.selector.map((s) => this.createV2AnnoSelector(s));
         // create choice, assuming two elements and 0 is default
-        v2anno.on.selector = {
+        on.selector = {
           '@type': 'oa:Choice',
           default: selectors[0],
           item: selectors[1],
         };
       } else {
-        v2anno.on.selector = this.createV2AnnoSelector(v3anno.target.selector);
+        on.selector = this.createV2AnnoSelector(v3anno.target.selector);
       }
       if (v3anno.target.source.partOf) {
-        v2anno.on.within = {
+        on.within = {
           '@id': v3anno.target.source.partOf.id,
           '@type': 'sc:Manifest',
         };
       }
     }
+    v2anno.on = [on]
     return v2anno;
   }
 
