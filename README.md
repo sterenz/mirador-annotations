@@ -1,5 +1,14 @@
 # React App with Mirador 3 and annotations-plugin
 
+## Start SAS annotation server locally
+
+Open a terminal windows where you have your `simpleAnnotationStore.war`file downloaded from [Github](http://0.0.0.0:8888/index.html) (needs Java 11 installed in your system) and launche the command:
+
+### `java -jar dependency/jetty-runner.jar --port 8888 simpleAnnotationStore.war`
+
+Navigate to:
+
+### http://0.0.0.0:8888/index.html
 
 ## Available Scripts
 

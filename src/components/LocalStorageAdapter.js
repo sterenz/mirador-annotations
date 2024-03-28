@@ -10,9 +10,9 @@ export default class LocalStorageAdapter {
     const emptyAnnoPage = {
       id: this.annotationPageId,
       items: [],
-      type: 'AnnotationPage',
+      type: "AnnotationPage",
     };
-    const annotationPage = await this.all() || emptyAnnoPage;
+    const annotationPage = (await this.all()) || emptyAnnoPage;
     annotationPage.items.push(annotation);
     localStorage.setItem(this.annotationPageId, JSON.stringify(annotationPage));
     return annotationPage;
@@ -22,9 +22,14 @@ export default class LocalStorageAdapter {
   async update(annotation) {
     const annotationPage = await this.all();
     if (annotationPage) {
-      const currentIndex = annotationPage.items.findIndex((item) => item.id === annotation.id);
+      const currentIndex = annotationPage.items.findIndex(
+        (item) => item.id === annotation.id
+      );
       annotationPage.items.splice(currentIndex, 1, annotation);
-      localStorage.setItem(this.annotationPageId, JSON.stringify(annotationPage));
+      localStorage.setItem(
+        this.annotationPageId,
+        JSON.stringify(annotationPage)
+      );
       return annotationPage;
     }
     return null;
@@ -34,7 +39,9 @@ export default class LocalStorageAdapter {
   async delete(annoId) {
     const annotationPage = await this.all();
     if (annotationPage) {
-      annotationPage.items = annotationPage.items.filter((item) => item.id !== annoId);
+      annotationPage.items = annotationPage.items.filter(
+        (item) => item.id !== annoId
+      );
     }
     localStorage.setItem(this.annotationPageId, JSON.stringify(annotationPage));
     return annotationPage;

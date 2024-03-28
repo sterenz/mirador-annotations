@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import SimpleAnnotationServerV2Adapter from './SimpleAnnotationServerV2Adapter';
+import React, { useEffect, useState } from "react";
+import SimpleAnnotationServerV2Adapter from "./SimpleAnnotationServerV2Adapter";
 
 const AnnotationManager = () => {
   // Initialize the adapter with canvasId and endpointUrl
-  const canvasId = '47174896'; // Replace with your canvas ID
-  const endpointUrl = 'http://localhost:8888/annotation'; // Replace with your SAS endpoint URL
+  const canvasId = "47174896"; // Replace with your canvas ID
+  const endpointUrl = "http://localhost:8888/annotation"; // Replace with your SAS endpoint URL
   const adapter = new SimpleAnnotationServerV2Adapter(canvasId, endpointUrl);
 
   // State to store annotations for the current canvas
@@ -14,11 +14,11 @@ const AnnotationManager = () => {
   const createAnnotation = async (annotationData) => {
     try {
       const response = await adapter.create(annotationData);
-      console.log('Annotation created:', response);
+      console.log("Annotation created:", response);
       // Update the annotations state with the newly created annotation
       setAnnotations([...annotations, response]);
     } catch (error) {
-      console.error('Error creating annotation:', error);
+      console.error("Error creating annotation:", error);
     }
   };
 
@@ -26,11 +26,11 @@ const AnnotationManager = () => {
   const fetchAnnotationsForCanvas = async () => {
     try {
       const response = await adapter.all();
-      console.log('Annotations for canvas:', response);
+      console.log("Annotations for canvas:", response);
       // Update the annotations state with the retrieved annotations
       setAnnotations(response.items);
     } catch (error) {
-      console.error('Error fetching annotations:', error);
+      console.error("Error fetching annotations:", error);
     }
   };
 
@@ -41,11 +41,7 @@ const AnnotationManager = () => {
 
   // Add more functions for updating and deleting annotations as needed
 
-  return (
-    <div>
-      {/* Your component JSX here */}
-    </div>
-  );
+  return <div>{/* Your component JSX here */}</div>;
 };
 
 export default AnnotationManager;
