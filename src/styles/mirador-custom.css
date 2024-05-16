@@ -1,0 +1,51 @@
+/* mirador-custom.css */
+
+#mirador-container {
+  position: relative;
+  width: 100%;
+  height: 600px; /* Set the desired height */
+  margin-top: 40px;
+  border: 2px solid;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* .WithPlugins\(WorkspaceControlPanel\)-root-5 {
+  background-color: blue !important;
+}
+
+.MuiTypography-root {
+  font-family: "Courier New", Courier, monospace !important;
+}
+
+#mirador-container header {
+  border-radius: 20px;
+  border: 2px solid red;
+  overflow: hidden;
+}
+
+.mosaic-window .mosaic-window-body,
+.mosaic-preview .mosaic-window-body {
+  border-radius: 20px;
+  border: 2px solid blue;
+  overflow: hidden;
+}
+
+.Connect\(WithPlugins\(WorkspaceMosaic\)\)-root-22 .mosaic-window {
+  border-radius: 20px;
+  border: 2px solid green;
+  overflow: hidden;
+}
+
+.mosaic-root {
+  border-radius: 20px;
+  border: 2px solid yellow;
+  overflow: hidden;
+}
+
+.mosaic-window .mosaic-preview,
+.mosaic-preview .mosaic-preview {
+  border-radius: 20px;
+  border: 2px solid purple;
+  overflow: hidden;
+} */

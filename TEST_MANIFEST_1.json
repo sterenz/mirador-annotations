@@ -1,0 +1,182 @@
+[
+  {
+    "@id": "http://localhost:8888/annotation/1710945861279",
+    "@type": "oa:Annotation",
+    "dcterms:created": "2024-03-20T15:44:21",
+    "dcterms:modified": "2024-03-20T15:44:21",
+    "resource": [
+      {
+        "@type": "dctypes:Text",
+        "http://dev.llgc.org.uk/sas/full_text": "3333",
+        "format": "text/html",
+        "chars": "<p>3333</p>"
+      }
+    ],
+    "on": [
+      {
+        "@type": "oa:SpecificResource",
+        "within": {
+          "@id": "https://media.nga.gov/public/manifests/nga_highlights.json",
+          "@type": "sc:Manifest"
+        },
+        "selector": {
+          "@type": "oa:Choice",
+          "default": {
+            "@type": "oa:FragmentSelector",
+            "value": "xywh=465,283,557,587"
+          },
+          "item": {
+            "@type": "oa:SvgSelector",
+            "value": "<svg xmlns='http://www.w3.org/2000/svg'><path xmlns=\"http://www.w3.org/2000/svg\" d=\"M465.00958,283.07929h278.45923v0h278.45923v293.39934v293.39934h-278.45923h-278.45923v-293.39934z\" data-paper-data=\"{&quot;strokeWidth&quot;:1,&quot;rotation&quot;:0,&quot;deleteIcon&quot;:null,&quot;rotationIcon&quot;:null,&quot;group&quot;:null,&quot;editable&quot;:true,&quot;annotation&quot;:null}\" id=\"rectangle_2ead00ba-0b2b-4bd5-a9da-4a3afa21b929\" fill-opacity=\"0\" fill=\"#00bfff\" fill-rule=\"nonzero\" stroke=\"#00bfff\" stroke-width=\"1\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke-miterlimit=\"10\" stroke-dasharray=\"\" stroke-dashoffset=\"0\" font-family=\"none\" font-weight=\"none\" font-size=\"none\" text-anchor=\"none\" style=\"mix-blend-mode: normal\"/></svg>"
+          }
+        },
+        "full": "https://media.nga.gov/public/manifests/canvas/61371.json"
+      }
+    ],
+    "motivation": [
+      "oa:commenting"
+    ],
+    "@context": "http://iiif.io/api/presentation/2/context.json"
+  },
+  {
+    "@id": "http://localhost:8888/annotation/1710946213306",
+    "@type": "oa:Annotation",
+    "dcterms:created": "2024-03-20T15:50:13",
+    "dcterms:modified": "2024-03-20T15:50:13",
+    "resource": [
+      {
+        "@type": "dctypes:Text",
+        "http://dev.llgc.org.uk/sas/full_text": "5555",
+        "format": "text/html",
+        "chars": "<p>5555</p>"
+      }
+    ],
+    "on": [
+      {
+        "@type": "oa:SpecificResource",
+        "within": {
+          "@id": "https://media.nga.gov/public/manifests/nga_highlights.json",
+          "@type": "sc:Manifest"
+        },
+        "selector": {
+          "@type": "oa:Choice",
+          "default": {
+            "@type": "oa:FragmentSelector",
+            "value": "xywh=290,1436,632,379"
+          },
+          "item": {
+            "@type": "oa:SvgSelector",
+            "value": "<svg xmlns='http://www.w3.org/2000/svg'><path xmlns=\"http://www.w3.org/2000/svg\" d=\"M289.90405,1435.91911h315.81586v0h315.81586v189.37342v189.37342h-315.81586h-315.81586v-189.37342z\" data-paper-data=\"{&quot;strokeWidth&quot;:1,&quot;rotation&quot;:0,&quot;deleteIcon&quot;:null,&quot;rotationIcon&quot;:null,&quot;group&quot;:null,&quot;editable&quot;:true,&quot;annotation&quot;:null}\" id=\"rectangle_d8ba7d1a-f7c5-448a-a0b1-4912d53f3932\" fill-opacity=\"0\" fill=\"#00bfff\" fill-rule=\"nonzero\" stroke=\"#00bfff\" stroke-width=\"1\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke-miterlimit=\"10\" stroke-dasharray=\"\" stroke-dashoffset=\"0\" font-family=\"none\" font-weight=\"none\" font-size=\"none\" text-anchor=\"none\" style=\"mix-blend-mode: normal\"/></svg>"
+          }
+        },
+        "full": "https://media.nga.gov/public/manifests/canvas/61371.json"
+      }
+    ],
+    "motivation": [
+      "oa:commenting"
+    ],
+    "@context": "http://iiif.io/api/presentation/2/context.json"
+  },
+  {
+    "@id": "http://localhost:8888/annotation/1710946804306",
+    "@type": "oa:Annotation",
+    "dcterms:created": "2024-03-20T16:00:04",
+    "dcterms:modified": "2024-03-20T16:00:04",
+    "resource": [
+      {
+        "@type": "dctypes:Text",
+        "http://dev.llgc.org.uk/sas/full_text": "4444",
+        "chars": "<p>4444</p>"
+      }
+    ],
+    "on": [
+      {
+        "@type": "oa:SpecificResource",
+        "selector": {
+          "@type": "oa:Choice",
+          "default": {
+            "@type": "oa:FragmentSelector",
+            "value": "xywh=24069,5665,6348,7597"
+          },
+          "item": {
+            "@type": "oa:SvgSelector",
+            "value": "<svg xmlns='http://www.w3.org/2000/svg'><path xmlns=\"http://www.w3.org/2000/svg\" d=\"M24069.06133,13262.76864v-7597.46363h6348.5655v7597.46363z\" data-paper-data=\"{&quot;state&quot;:null}\" fill=\"none\" fill-rule=\"nonzero\" stroke=\"#00bfff\" stroke-width=\"1\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke-miterlimit=\"10\" stroke-dasharray=\"\" stroke-dashoffset=\"0\" font-family=\"none\" font-weight=\"none\" font-size=\"none\" text-anchor=\"none\" style=\"mix-blend-mode: normal\"/></svg>"
+          }
+        },
+        "full": "https://media.nga.gov/public/manifests/canvas/61371.json"
+      }
+    ],
+    "motivation": [
+      "oa:commenting"
+    ],
+    "@context": "http://iiif.io/api/presentation/2/context.json"
+  },
+  {
+    "@id": "http://localhost:8888/annotation/1711487941990",
+    "@type": "oa:Annotation",
+    "dcterms:created": "2024-03-26T22:19:01",
+    "dcterms:modified": "2024-03-26T22:19:01",
+    "resource": [
+      {
+        "@type": "dctypes:Text",
+        "http://dev.llgc.org.uk/sas/full_text": "yes",
+        "chars": "<p>yes</p>"
+      }
+    ],
+    "on": [
+      {
+        "@type": "oa:SpecificResource",
+        "selector": {
+          "@type": "oa:Choice",
+          "default": {
+            "@type": "oa:FragmentSelector",
+            "value": "xywh=-1072,2550,3757,1746"
+          },
+          "item": {
+            "@type": "oa:SvgSelector",
+            "value": "<svg xmlns='http://www.w3.org/2000/svg'><path xmlns=\"http://www.w3.org/2000/svg\" d=\"M-1071.74456,3423.45832c0,-482.2605 841.23929,-873.20988 1878.96054,-873.20988c1037.72125,0 1878.96054,390.94938 1878.96054,873.20988c0,482.2605 -841.23929,873.20988 -1878.96054,873.20988c-1037.72125,0 -1878.96054,-390.94938 -1878.96054,-873.20988z\" data-paper-data=\"{&quot;state&quot;:null}\" fill=\"none\" fill-rule=\"nonzero\" stroke=\"#00bfff\" stroke-width=\"1\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke-miterlimit=\"10\" stroke-dasharray=\"\" stroke-dashoffset=\"0\" font-family=\"none\" font-weight=\"none\" font-size=\"none\" text-anchor=\"none\" style=\"mix-blend-mode: normal\"/></svg>"
+          }
+        },
+        "full": "https://media.nga.gov/public/manifests/canvas/61371.json"
+      }
+    ],
+    "motivation": [
+      "oa:commenting"
+    ],
+    "@context": "http://iiif.io/api/presentation/2/context.json"
+  },
+  {
+    "@id": "http://localhost:8888/annotation/1711645966763",
+    "@type": "oa:Annotation",
+    "dcterms:created": "2024-03-28T18:12:46",
+    "dcterms:modified": "2024-03-28T18:12:46",
+    "resource": [
+      {
+        "@type": "dctypes:Text",
+        "http://dev.llgc.org.uk/sas/full_text": "newnew",
+        "chars": "<p>newnew</p>"
+      }
+    ],
+    "on": [
+      {
+        "@type": "oa:SpecificResource",
+        "selector": {
+          "@type": "oa:Choice",
+          "default": {
+            "@type": "oa:FragmentSelector",
+            "value": "xywh=15735,8999,11752,4612"
+          },
+          "item": {
+            "@type": "oa:SvgSelector",
+            "value": "<svg xmlns='http://www.w3.org/2000/svg'><path xmlns=\"http://www.w3.org/2000/svg\" d=\"M15735.13737,11305.11568c0,-1273.61686 2630.8877,-2306.08732 5876.25214,-2306.08732c3245.36444,0 5876.25214,1032.47046 5876.25214,2306.08732c0,1273.61686 -2630.8877,2306.08732 -5876.25214,2306.08732c-3245.36444,0 -5876.25214,-1032.47046 -5876.25214,-2306.08732z\" data-paper-data=\"{&quot;state&quot;:null}\" fill=\"none\" fill-rule=\"nonzero\" stroke=\"#00bfff\" stroke-width=\"1\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke-miterlimit=\"10\" stroke-dasharray=\"\" stroke-dashoffset=\"0\" font-family=\"none\" font-weight=\"none\" font-size=\"none\" text-anchor=\"none\" style=\"mix-blend-mode: normal\"/></svg>"
+          }
+        },
+        "full": "https://media.nga.gov/public/manifests/canvas/61371.json"
+      }
+    ],
+    "motivation": [
+      "oa:commenting"
+    ],
+    "@context": "http://iiif.io/api/presentation/2/context.json"
+  }
+]

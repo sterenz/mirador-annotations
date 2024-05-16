@@ -1,0 +1,150 @@
+[
+  {
+    "@id": "http://localhost:8888/annotation/1710945861279",
+    "@type": "oa:Annotation",
+    "dcterms:created": "2024-03-20T15:44:21",
+    "dcterms:modified": "2024-03-20T15:44:21",
+    "resource": [
+      {
+        "@type": "dctypes:Text",
+        "http://dev.llgc.org.uk/sas/full_text": "3333",
+        "format": "text/html",
+        "chars": "<p>3333</p>"
+      }
+    ],
+    "on": [
+      {
+        "@type": "oa:SpecificResource",
+        "within": {
+          "@id": "https://media.nga.gov/public/manifests/nga_highlights.json",
+          "@type": "sc:Manifest"
+        },
+        "selector": {
+          "@type": "oa:Choice",
+          "default": {
+            "@type": "oa:FragmentSelector",
+            "value": "xywh=465,283,557,587"
+          },
+          "item": {
+            "@type": "oa:SvgSelector",
+            "value": "<svg xmlns='http://www.w3.org/2000/svg'><path xmlns=\"http://www.w3.org/2000/svg\" d=\"M465.00958,283.07929h278.45923v0h278.45923v293.39934v293.39934h-278.45923h-278.45923v-293.39934z\" data-paper-data=\"{&quot;strokeWidth&quot;:1,&quot;rotation&quot;:0,&quot;deleteIcon&quot;:null,&quot;rotationIcon&quot;:null,&quot;group&quot;:null,&quot;editable&quot;:true,&quot;annotation&quot;:null}\" id=\"rectangle_2ead00ba-0b2b-4bd5-a9da-4a3afa21b929\" fill-opacity=\"0\" fill=\"#00bfff\" fill-rule=\"nonzero\" stroke=\"#00bfff\" stroke-width=\"1\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke-miterlimit=\"10\" stroke-dasharray=\"\" stroke-dashoffset=\"0\" font-family=\"none\" font-weight=\"none\" font-size=\"none\" text-anchor=\"none\" style=\"mix-blend-mode: normal\"/></svg>"
+          }
+        },
+        "full": "https://media.nga.gov/public/manifests/canvas/61371.json"
+      }
+    ],
+    "motivation": [
+      "oa:commenting"
+    ],
+    "@context": "http://iiif.io/api/presentation/2/context.json"
+  },
+  {
+    "@id": "http://localhost:8888/annotation/header",
+    "@type": "oa:Annotation",
+    "dcterms:created": "2024-03-30T10:00:00",
+    "dcterms:modified": "2024-03-30T10:00:00",
+    "resource": [
+      {
+        "@type": "dctypes:Text",
+        "chars": "<p>This is a header annotation</p>"
+      }
+    ],
+    "on": [
+      {
+        "@type": "oa:SpecificResource",
+        "within": {
+          "@id": "https://media.nga.gov/public/manifests/nga_highlights.json",
+          "@type": "sc:Manifest"
+        },
+        "selector": {
+          "@type": "oa:Choice",
+          "default": {
+            "@type": "oa:FragmentSelector",
+            "value": "xywh=100,100,800,200"
+          },
+          "item": {
+            "@type": "oa:SvgSelector",
+            "value": "<svg xmlns='http://www.w3.org/2000/svg'><rect xmlns=\"http://www.w3.org/2000/svg\" x=\"100\" y=\"100\" width=\"800\" height=\"200\" fill-opacity=\"0\" fill=\"none\" stroke=\"#00bfff\" stroke-width=\"1\"/></svg>"
+          }
+        },
+        "full": "https://media.nga.gov/public/manifests/canvas/61371.json"
+      }
+    ],
+    "motivation": [
+      "oa:commenting"
+    ],
+    "@context": "http://iiif.io/api/presentation/2/context.json"
+  },
+  {
+    "@id": "http://localhost:8888/annotation/name",
+    "@type": "oa:Annotation",
+    "dcterms:created": "2024-03-30T10:05:00",
+    "dcterms:modified": "2024-03-30T10:05:00",
+    "resource": [
+      {
+        "@type": "dctypes:Text",
+        "chars": "<p>This is a name annotation</p>"
+      }
+    ],
+    "on": [
+      {
+        "@type": "oa:SpecificResource",
+        "within": {
+          "@id": "http://localhost:8888/annotation/header"
+        },
+        "selector": {
+          "@type": "oa:Choice",
+          "default": {
+            "@type": "oa:FragmentSelector",
+            "value": "xywh=150,50,200,50"
+          },
+          "item": {
+            "@type": "oa:SvgSelector",
+            "value": "<svg xmlns='http://www.w3.org/2000/svg'><rect xmlns=\"http://www.w3.org/2000/svg\" x=\"150\" y=\"50\" width=\"200\" height=\"50\" fill-opacity=\"0\" fill=\"none\" stroke=\"#00bfff\" stroke-width=\"1\"/></svg>"
+          }
+        },
+        "full": "https://media.nga.gov/public/manifests/canvas/61371.json"
+      }
+    ],
+    "motivation": [
+      "oa:commenting"
+    ],
+    "@context": "http://iiif.io/api/presentation/2/context.json"
+  },
+  {
+    "@id": "http://localhost:8888/annotation/logo",
+    "@type": "oa:Annotation",
+    "dcterms:created": "2024-03-30T10:10:00",
+    "dcterms:modified": "2024-03-30T10:10:00",
+    "resource": [
+      {
+        "@type": "dctypes:Text",
+        "chars": "<p>This is a logo annotation</p>"
+      }
+    ],
+    "on": [
+      {
+        "@type": "oa:SpecificResource",
+        "within": {
+          "@id": "http://localhost:8888/annotation/name"
+        },
+        "selector": {
+          "@type": "oa:Choice",
+          "default": {
+            "@type": "oa:FragmentSelector",
+            "value": "xywh=50,0,100,50"
+          },
+          "item": {
+            "@type": "oa:SvgSelector",
+            "value": "<svg xmlns='http://www.w3.org/2000/svg'><rect xmlns=\"http://www.w3.org/2000/svg\" x=\"50\" y=\"0\" width=\"100\" height=\"50\" fill-opacity=\"0\" fill=\"none\" stroke=\"#00bfff\" stroke-width=\"1\"/></svg>"
+          }
+        },
+        "full": "https://media.nga.gov/public/manifests/canvas/61371.json"
+      }
+    ],
+    "motivation": [
+      "oa:commenting"
+    ],
+    "@context": "http://iiif.io/api/presentation/2/context.json"
+  }
+]
