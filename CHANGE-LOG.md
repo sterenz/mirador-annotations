@@ -4,6 +4,7 @@
 
 - Added import custom font in `mirador-custom.css`.
 - Updated `customTheme.js`.
+- Updated `mirador-custom.css` to override CSS.
 
 2024-16-05 - Stefano Renzetti <stefano.renzetti3@studio.unibo.it>
 

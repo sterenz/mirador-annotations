@@ -163,6 +163,11 @@ export const customTheme = {
         useNextVariants: true, // set so that console deprecation warning is removed
       },
       overrides: {
+        MuiAppBar: {
+          root: {
+            display: "none",
+          },
+        },
         MuiPaper: {
           root: {
             backgroundColor: "#2d3439", // Your custom background color for the left sidebar
