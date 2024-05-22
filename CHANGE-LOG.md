@@ -1,12 +1,17 @@
 # 📑 Change log
 
-2024-16-04 - Stefano Renzetti <stefano.renzetti3@studio.unibo.it>
+2024-22-05 - Stefano Renzetti <stefano.renzetti3@studio.unibo.it>
+
+- Added import custom font in `mirador-custom.css`.
+- Updated `customTheme.js`.
+
+2024-16-05 - Stefano Renzetti <stefano.renzetti3@studio.unibo.it>
 
 - Created `customTheme.js`, in `theme` folder to extend `MiradorViewer` themes.
 - Updated `MiradorViewer.js` to accept `theme` props.
 - Updated `App.js` to import `customTheme.js` and render it in the useEffect.
 
-2024-15-04 - Stefano Renzetti <stefano.renzetti3@studio.unibo.it>
+2024-15-05 - Stefano Renzetti <stefano.renzetti3@studio.unibo.it>
 
 - Created `mirador-custom.css` in `styles` folder to override default CSS.
 

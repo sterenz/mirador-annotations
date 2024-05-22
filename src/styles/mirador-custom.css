@@ -1,12 +1,12 @@
 /* mirador-custom.css */
 
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
 #mirador-container {
   position: relative;
   width: 100%;
   height: 600px; /* Set the desired height */
   margin-top: 40px;
-  border: 2px solid;
-  border-radius: 20px;
   overflow: hidden;
 }
 
