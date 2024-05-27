@@ -10,10 +10,10 @@ export const customTheme = {
       palette: {
         type: "dark",
         primary: {
-          main: "#822433", // Your custom primary color
+          main: "#ffffff", // Your custom primary color
         },
         secondary: {
-          main: "#822433", // Your custom secondary color
+          main: "#f3f3f3b3", // Your custom secondary color
         },
         shades: {
           dark: "#2d3439", // Dark shade for dark theme
@@ -165,7 +165,9 @@ export const customTheme = {
       overrides: {
         MuiAppBar: {
           root: {
-            display: "none",
+            "&.MuiAppBar-positionAbsolute": {
+              display: "none", // Hide the left toolbar
+            },
           },
         },
         MuiPaper: {

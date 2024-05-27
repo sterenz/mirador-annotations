@@ -17,3 +17,8 @@
 .mirador-scrollto-scrollable {
   scrollbar-color: #2d3439 #575d62;
 }
+
+/* Hide left navbar with Mirador logo */
+/* nav.MuiPaper-root.MuiAppBar-root.MuiAppBar-positionAbsolute.MuiAppBar-colorDefault.WithPlugins\(WorkspaceControlPanel\)-root-5.mirador-workspace-control-panel {
+  display: none;
+} */
