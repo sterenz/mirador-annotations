@@ -37,7 +37,8 @@ const MiradorComponent = ({ theme }) => {
           manifestId:
             // "https://media.nga.gov/public/manifests/nga_highlights.json",
             // "http://127.0.0.1:8080/manifest_structures.json", // TEST MANIFEST v2 ON "SIMPLE WEB SERVER"
-            "https://raw.githubusercontent.com/sterenz/TEST_MANIFEST/main/manifests/manifest_structures_v3.json", // TEST MANIFEST v3 ON "SIMPLE WEB SERVER"
+            "https://raw.githubusercontent.com/sterenz/TEST_MANIFEST/main/manifests/manifest_structures_annotations_v3.json", // TEST MANIFEST v3 WITH ANNOTATIONS INSIDE"
+          // "https://raw.githubusercontent.com/sterenz/TEST_MANIFEST/main/manifests/manifest_structures_v3.json", // TEST MANIFEST v3 ON "SIMPLE WEB SERVER"
         },
       ],
       ...theme, // Merge the theme configuration
